@@ -28,6 +28,28 @@ body{
     list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+.section{
+    /* outline: 1px solid tomato; */
+    /* max-width: 1440px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
+}
+
+.container{
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: 1px solid rgb(27, 133, 34); */
+}
+
 /*------------- button index--------------*/
 .button-index {
     background-color: var(--accent-color);
@@ -37,6 +59,14 @@ body{
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--primary-white-color);
+
+    display:block;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border-radius: 4px;
+   
+    
+        
 }
 
 .button-index:hover,
@@ -55,6 +85,10 @@ body{
     letter-spacing: 0.04em;
     color: var(--accent-color);
     background-color: var(--third-text-color);
+    width: 116px;
+    height: 48px;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 
 .button-portfolio:hover,
@@ -63,6 +97,14 @@ body{
     background: var(--accent-second-color);
     cursor: pointer;
 
+}
+
+.list-filter{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
 }
 
 /*-------------- navigation------------*/
@@ -86,6 +128,30 @@ body{
     color: var(--accent-second-color)
 }
 
+.header-main{
+    border-bottom: 1px solid var(--btn-background-color);
+}
+
+.header-page{
+    display: flex;
+    align-items: center; 
+    
+}
+
+.navigation{
+    display: flex;
+}
+
+.navigation .item{
+    padding-top: 24px;
+    padding-bottom: 24px;;
+
+}
+
+.navigation .item + .item{
+    margin-left: 40px;
+}
+
 
 /* ----------------logo----------------- */
 .logo{
@@ -96,6 +162,14 @@ body{
     font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
+    margin-right: 76px;;
+
+}
+
+.project{
+   
+    width: calc((100% - 48px)/3); 
 }
 
 .logo-black{
@@ -111,6 +185,7 @@ body{
 /* -----------------contacts------------ */
 .contacts{
     font-style: normal;
+    
 }
 
 .contact-link{
@@ -126,22 +201,58 @@ body{
     color: var(--accent-second-color);
 }
 
+.address{
+    display: flex;
+    margin-left: auto;
+}
+
+ .list-contacts{
+    display: flex;
+}
+
+ .list-contacts .item + .item{
+     margin-left: 40px;
+ }
+
+
 /*------------------- hero----------------- */
 .section-hero{
     background-color: var(--second-text-color);
+
+    /* max-width: 1440px; */
+    display: flex;    
+    justify-content: center;
+
+    padding: 188px 0;
+    margin-left: auto;
+    margin-right: auto;
 }
-.section-hero .section-title-hero{
+.title-hero{
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-white-color);
+
+    margin-bottom: 48px;
 }
 
 /*--------------------- qualities---------------- */
 .hidden-title{
-    visibility: hidden;
+    /* height: 0px;
+    visibility: hidden;*/
+    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
@@ -160,10 +271,19 @@ body{
     letter-spacing: 0.02em;
 }
 
+.qualities-container{
+    display: flex; 
+    justify-content: center;
+    gap: 24px;
+}
 
+.section-qualities{
+    padding: 120px 0;
+}
 
 /* ----what wre we doing --- our team----projects------- */
-.section .section-title{
+
+.title-work{  
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -173,7 +293,9 @@ body{
     color: var(--second-text-color);
     text-align: center;
 
+    margin-bottom: 71px;
 }
+
 
 .section .images-name{
     font-weight: 500;
@@ -181,6 +303,8 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--second-text-color);    
+
+    margin-bottom: 8px;
 }
 
 .section .images-description{
@@ -190,21 +314,76 @@ body{
     color: var(--primary-text-color);
 }
 
-.background-team{
+
+.list-work {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+
+/* ----------team------------- */
+.section-team{
     background-color: var(--third-text-color);
+    padding: 120px 0;
 }
 
 .member{
     background-color: var(--primary-white-color);
 }
+
+.title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--second-text-color);
+    text-align: center;
+
+    margin-bottom: 72px;
+}
+
+.list-team{
+    display: flex;
+    justify-content:center;
+    gap: 24px;
+}
+
+
+.list-projects{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.project-text{
+    /* outline: 1px solid violet; */
+    padding: 32px 54px 32px 16px;
+}
+
 /* -------------footer---------------- */
 .section-footer{
-    background-color: var(--second-text-color);        
+    background-color: var(--second-text-color);
+
+    padding-top: 99px;        
+    padding-bottom: 101px;
+    /* max-width: 1440px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-text{
     font-size: 16px;
     line-height: 1.5;
     color: var(--third-text-color);
+    margin-top: 16px;
+}
+
+.container-footer{
+    display: block;
 }
 

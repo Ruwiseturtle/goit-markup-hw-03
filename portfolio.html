@@ -24,45 +24,48 @@
   </head>
 
   <body>
-    <header>
+     <header class="header-main">
+     <div class="container header-page">
       <!-- navigation -->
       <nav class="navigation">
-        <a href="./index.html" class="link logo"
+        <a href="./index.html" class="item  link logo"
           >Web<span class="logo-black">Studio</span></a
         >
 
         <ul class="navigation list">
-          <li><a href="./index.html" class="link nav-link">Studio</a></li>
-          <li>
+          <li class="item"><a href="./index.html" class="link nav-link">Studio</a></li>
+          <li class="item">
             <a href="./portfolio.html" class="link nav-link">Portfolio</a>
           </li>
-          <li><a href="" class="link nav-link">Contacts</a></li>
+          <li class="item"><a href="" class="link nav-link">Contacts</a></li>
         </ul>
       </nav>
 
       <!-- contacts  -->
-      <address class="contacts">
-        <ul class="list">
-          <li>
+      <address class="address contacts">
+        <ul class="list-contacts list">
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link contact-link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+110001111111" class="link contact-link"
               >+11 (000) 111-11-11</a
             >
           </li>
         </ul>
       </address>
+      </div>
     </header>
 
     <!-- unique content --->
     <main>
       <section class="section">
+        <div class="container">
         <h1 class="hidden-title">Portfolio</h1>
         <!-- filter btn active -->
-        <ul class="list">
+        <ul class="list list-filter">
           <li><button type="button" class="button-portfolio">All</button></li>
           <li>
             <button type="button" class="button-portfolio">Web Site</button>
@@ -74,44 +77,49 @@
           <li>
             <button type="button" class="button-portfolio">Marketing</button>
           </li>
-        </ul>
+        </ul>      
 
         <!-- projects -->
-        <ul class="list">
-          <li>
+        <ul class="list list-projects">
+          <li class="project">
             <a href="" class="link">
               <img
                 src="./images/img-8.jpg"
                 alt="Banking App Interface Concept App"
                 width="360"
               />
+              <div class="project-text">
               <h2 class="images-name">Banking App Interface Concept</h2>
-              <p class="images-description">App</p></a
-            >
+              <p class="images-description">App</p>
+              </div>
+              </a>
           </li>
-          <li>
-            <a href="" class="link">
+          <li class="project">
+            <href="" class="link">
               <img
                 src="./images/img-7.jpg"
                 alt="Mobile phone scans the code"
                 width="360"
               />
+              <div class="project-text">
               <h2 class="images-name">Cashless Payment</h2>
-              <p class="images-description">Marketing</p></a
-            >
+              <p class="images-description">Marketing</p>
+          </div></a>
           </li>
-          <li>
+          <li class="project">
             <a href="" class="link">
               <img
                 src="./images/img-6.jpg"
                 alt="Computer and phone"
                 width="360"
               />
+              <div class="project-text">
               <h2 class="images-name">Meditation App</h2>
-              <p class="images-description">App</p></a
+              <p class="images-description">App</p>
+              </div></a
             >
           </li>
-          <li>
+          <li class="project">
             <a href="" class="link">
               <img
                 src="./images/img-5.jpg"
@@ -119,73 +127,87 @@
                   a Google map near the steering wheel"
                 width="360"
               />
+               <div class="project-text">
               <h2 class="images-name">Taxi Service</h2>
-              <p class="images-description">Marketing</p></a
+              <p class="images-description">Marketing</p>
+               </div></a
             >
           </li>
-          <li>
+          <li class="project">
             <a href="" class="link">
               <img
                 src="./images/img-4.jpg"
                 alt="Phone presentation"
                 width="360"
               />
+               <div class="project-text">
               <h2 class="images-name">Screen Illustrations</h2>
-              <p class="images-description">Design</p></a
+              <p class="images-description">Design</p>
+              </div></a
             >
           </li>
-          <li>
+          <li class="project">
             <a href="" class="link">
               <img
                 src="./images/img-3.jpg"
                 alt="Girl talking on the phone"
                 width="360"
               />
+              <div class="project-text">
               <h2 class="images-name">Online Courses</h2>
-              <p class="images-description">Marketing</p></a
+              <p class="images-description">Marketing</p>
+              </div></a
             >
           </li>
-          <li>
+          <li class="project">
             <a href="" class="link">
               <img
                 src="./images/img-2.jpg"
                 alt="Instagram Stories Concept Design"
                 width="360"
               />
+               <div class="project-text">
               <h2 class="images-name">Instagram Stories Concept</h2>
-              <p class="images-description">Design</p></a
+              <p class="images-description">Design</p>
+              </div></a
             >
           </li>
-          <li>
+          <li class="project">
             <a href="" class="link">
               <img
                 src="./images/img-1.jpg"
                 alt="The girl is walking with groceries in her hands"
                 width="360"
               />
+              <div class="project-text">
               <h2 class="images-name">Organic Food</h2>
-              <p class="images-description">Web Site</p></a
+              <p class="images-description">Web Site</p>
+              </div></a
             >
           </li>
-          <li>
+          <li class="project">
             <a href="" class="link">
               <img
                 src="./images/img.jpg"
                 alt="Someone pours fresh coffee"
                 width="360"
               />
+               <div class="project-text">
               <h2 class="images-name">Fresh Coffee</h2>
-              <p class="images-description">Web Site</p></a
+              <p class="images-description">Web Site</p>
+              </div></a
             >
           </li>
         </ul>
-      </section>
+        </div>
+            </section>
     </main>
 
     <!-- подвал -->
     <footer class="section-footer">
+      <div class="container container-footer">
       <!-- logo -->
-      <a href="./index.html" class="link logo"
+      <a href="./index.html" class="link logo footer-logo"
         >Web<span class="logo-white">Studio</span></a
       >
 
@@ -195,6 +217,7 @@
         sales for your business with digital<br />
         marketing & growth solutions.
       </p>
+      </div>
     </footer>
   </body>
 </html>
