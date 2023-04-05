@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5, h6, p, ul{
     cursor: pointer;
 }
 
+
+.portfolio{
+    padding-top: 96px;
+}
 /* ----------buttons portfolio-------- */
 .button-portfolio{
     font-family: "Roboto", sans-serif;
@@ -103,8 +107,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 /*-------------- navigation------------*/
@@ -135,21 +138,33 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .header-page{
     display: flex;
     align-items: center; 
-    
+    justify-content: space-between;
 }
 
 .navigation{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
 }
 
-.navigation .item{
+.site-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.item.logo{
     padding-top: 24px;
-    padding-bottom: 24px;;
+    padding-bottom: 24px;
 
 }
 
-.navigation .item + .item{
-    margin-left: 40px;
+
+.nav-link{
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 
@@ -162,9 +177,14 @@ h1, h2, h3, h4, h5, h6, p, ul{
     font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
     margin-right: 76px;;
 
+}
+
+.footer-logo {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .project{
@@ -194,6 +214,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .contact-link:hover,
@@ -203,17 +224,12 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
 .address{
     display: flex;
-    margin-left: auto;
 }
 
  .list-contacts{
     display: flex;
+    gap: 40px;
 }
-
- .list-contacts .item + .item{
-     margin-left: 40px;
- }
-
 
 /*------------------- hero----------------- */
 .section-hero{
@@ -228,6 +244,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
     margin-right: auto;
 }
 .title-hero{
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -257,6 +274,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
 
 .qualities-title{
+    margin-bottom: 8px;
     color: var(--second-text-color);
     font-weight: 500;
     font-size: 20px;
@@ -307,6 +325,10 @@ h1, h2, h3, h4, h5, h6, p, ul{
     margin-bottom: 8px;
 }
 
+.images-width{
+    width: 100%;
+}
+
 .section .images-description{
     font-size: 16px;
     line-height: 1.5;
@@ -317,11 +339,12 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
 .list-work {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 24px;
-
 }
-
+.list-work img{
+    display: block;
+}
 
 /* ----------team------------- */
 .section-team{
@@ -330,6 +353,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 }
 
 .member{
+    width: calc((100% - 72px)/4);
     background-color: var(--primary-white-color);
 }
 
@@ -348,8 +372,13 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
 .list-team{
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     gap: 24px;
+}
+
+.team-container{
+    padding: 32px 16px;
+    text-align: center;
 }
 
 
@@ -363,6 +392,9 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .project-text{
     /* outline: 1px solid violet; */
     padding: 32px 54px 32px 16px;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
 }
 
 /* -------------footer---------------- */
@@ -380,7 +412,6 @@ h1, h2, h3, h4, h5, h6, p, ul{
     font-size: 16px;
     line-height: 1.5;
     color: var(--third-text-color);
-    margin-top: 16px;
 }
 
 .container-footer{
