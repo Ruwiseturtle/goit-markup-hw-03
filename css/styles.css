@@ -271,13 +271,13 @@ h1, h2, h3, h4, h5, h6, p, ul{
     letter-spacing: 0.02em;
 }
 
-.qualities-container{
+.list-qualities{
     display: flex; 
     justify-content: center;
     gap: 24px;
 }
 
-.list-qualities{
+.section-qualities{
     padding: 120px 0;
 }
 
